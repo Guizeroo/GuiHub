@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*background: radial-gradient(circle, rgba(255,255,255,1) 0%, #f2f2f2 100%);*/
+
 body {
+  /*background-image: url(https://img.freepik.com/fotos-gratis/mulher-com-oculos-de-vr-flutua-no-espaco-de-neon-com-cabos-anexados-a-ela-conceito-de-avatar-do-metaverso_1217-3926.jpg?t=st=1657675811~exp=1657676411~hmac=6b964dcf85caac0aaf8c21c2f712f9da1a231d1b85e66c9dc1d469f0bf4a46cf&w=996);*/
   background-image: url(./img/background\ ui.jpg);
-  background-size: 1500px;
+  background-size: auto;
+  background-position: -44vw;
+  background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,51 +26,62 @@ body {
   border: 1px solid rgba(231, 231, 231, 0.16);
 }
 
-img {
+.perfil {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  border: 4px solid #fafafa;
-  padding: 3.7px;
-  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #fafafa;
+  padding: 3.6px;
+  margin-top: 28px;
+  display: inline;
 }
 
-h1 {
-  color: #fafafa;
-  font-size: 32px;
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-p {
+.nickname {
   color: #fafafa;
   font-weight: 400;
   opacity: 0.6;
   font-size: 18px;
   transition: opacity 250ms;
+  margin-top: 14px;
+  margin-bottom: 28px;
 }
 
-p:hover {
+.nickname:hover {
   opacity: 1;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   text-transform: uppercase;
 }
 
+.icones {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+
 ul {
   list-style: none;
-  margin: 42px 28px;
+  margin-right: 28px;
+  margin-left: 28px;
+  margin-bottom: 32px;
 }
 /* 53px */
+
 ul li a {
   height: 53px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 25%;
   border: 2.8px solid rgb(247, 247, 247);
   font-weight: 700;
   margin-bottom: 16px;
@@ -76,7 +90,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #b885eb;
+  background-color: #724a9e;
 }
 
 footer {
